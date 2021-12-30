@@ -1,3 +1,4 @@
+#include <cfloat>
 #include <iostream>
 using namespace std;
 
@@ -11,5 +12,6 @@ int main()
     cout << "f2 = " << f2 << endl;
     cout << "f1 - f2 = " << f1 - f2 << endl;
     cout << "(f1 - f2 == 0) = " << (f1 - f2 == 0) << endl;
+    cout << "(f1 - f2 == 0) = " << (f1 - f2 < FLT_EPSILON) << endl;
     return 0;
 }

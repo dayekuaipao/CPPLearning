@@ -6,6 +6,8 @@ int main()
     bool b1 = true;
     int i = b1;
     bool b2 = -256;
+
+    cout << "sizeof(bool):" << sizeof(b1) << endl;
     cout << "i=" << i << endl;
     cout << "b1=" << b1 << endl;
     cout << "b2=" << b2 << endl;
