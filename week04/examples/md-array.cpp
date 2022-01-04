@@ -12,6 +12,14 @@ void init_2d_array(float mat[][4], //error, arrays of unknown bound
             mat[r][c] =  r * c;
 }
 
+void init_2d_array(float* mat[], //error, arrays of unknown bound
+                    size_t rows, size_t cols)
+{
+    for (int r = 0; r < rows; r++)
+        for(int c = 0; c < cols; c++)
+            mat[r][c] =  r * c;
+}
+
 int main()
 {
     int mat1[2][3] = {{11,12,13}, {14,15,16}};
@@ -21,17 +29,28 @@ int main()
     //float mat2[rows][cols]; //uninitialized array
     float mat2[rows][4]; //uninitialized array
 
-    //init_2d_array(mat2, rows, cols);
+    init_2d_array(mat2, rows, cols);
 
-    for (int r = 0; r < rows; r++)
-        for(int c = 0; c < cols; c++)
-            mat2[r][c] =  r * c;
+    // for (int r = 0; r < rows; r++)
+    //     for(int c = 0; c < cols; c++)
+    //         mat2[r][c] =  r * c;
 
 
     for (int r = 0; r < rows; r++)
     {
         for(int c = 0; c < cols; c++)
             cout << mat2[r][c] << " ";
+        cout << endl;
+    }
+
+    float mat3[rows][4]; //uninitialized array
+
+    init_2d_array(mat3, rows, cols);
+
+    for (int r = 0; r < rows; r++)
+    {
+        for(int c = 0; c < cols; c++)
+            cout << mat3[r][c] << " ";
         cout << endl;
     }
     return 0;

@@ -8,7 +8,7 @@ int main()
     int len = 0;
     while ( len < 10 )
     {
-        int num_array2[len]; //variable-length array
+        int num_array2[len]; //variable-length array, which cannot be initialized.
         cout << "len = " << len;
         cout << ", sizeof(num_array2)) = " << sizeof(num_array2) << endl;
         len ++;

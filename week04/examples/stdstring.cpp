@@ -14,5 +14,7 @@ int main()
 
     cout << "str1 < str2 is " << (str1 < str2) << endl;
 
+    cout<<"out of index:"<<str1[10]<<endl;
+
     return 0;
 }

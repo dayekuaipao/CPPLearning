@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/func.h
+
+/home/shaun/workspace/CPPLearning/week04/exercises/cmake3/src/main.cpp
+func.h
+/home/shaun/workspace/CPPLearning/week04/exercises/cmake3/src/func.h
+

@@ -1,0 +1,3 @@
+/home/shaun/workspace/CPPLearning/week04/exercises/exercise2/build/CMakeFiles/rebuild_cache.dir
+/home/shaun/workspace/CPPLearning/week04/exercises/exercise2/build/CMakeFiles/edit_cache.dir
+/home/shaun/workspace/CPPLearning/week04/exercises/exercise2/build/CMakeFiles/dayinfo.dir

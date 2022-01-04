@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/dayinfo.dir/src/dayinfo.cpp.o CMakeFiles/dayinfo.dir/src/main.cpp.o  -o dayinfo 

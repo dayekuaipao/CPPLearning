@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/dayinfo.hpp
+
+/home/shaun/workspace/CPPLearning/week04/exercises/exercise2/src/main.cpp
+dayinfo.hpp
+/home/shaun/workspace/CPPLearning/week04/exercises/exercise2/src/dayinfo.hpp
+iostream
+-
+

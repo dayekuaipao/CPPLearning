@@ -1,0 +1,3 @@
+/home/shaun/workspace/CPPLearning/week04/exercises/cmake3/build/CMakeFiles/rebuild_cache.dir
+/home/shaun/workspace/CPPLearning/week04/exercises/cmake3/build/CMakeFiles/edit_cache.dir
+/home/shaun/workspace/CPPLearning/week04/exercises/cmake3/build/CMakeFiles/hello.dir

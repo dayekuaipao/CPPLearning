@@ -53,7 +53,10 @@ int main()
     //declaration and initialization
     struct Point point1 = {.type=TYPE_INT8, .data8={-2,3,4}};
     struct Point point2 = {.type=TYPE_INT32, .data32={1,-2,3}};
-    
+
+    cout << "sizeof = " << sizeof(point1) << endl;
+    cout << "sizeof = " << sizeof(point2) << endl;
+
     cout << "Data width = " << datawidth(point1) << endl;
     cout << "Data width = " << datawidth(point2) << endl;
 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/stuinfo.hpp
+
+/home/shaun/workspace/CPPLearning/week04/exercises/exercise1/src/stuinfo.cpp
+stdio.h
+-
+string.h
+-
+stuinfo.hpp
+-
+

@@ -19,5 +19,14 @@ int main()
     char name[10] = {'Y', 'u', '\0', 'S', '.', '0'};
     cout << strlen(name) << endl;
 
+    wchar_t chinese_name1[] = L"张云翔";
+    char16_t chinese_name2[] = u"张云翔";
+    char32_t chinese_name3[] = U"张云翔";
+    
+    cout<<"sizeof wchar_t: "<<sizeof(wchar_t)<<endl;
+    cout<<chinese_name1<<endl;
+    cout<<chinese_name2<<endl;
+    cout<<chinese_name3<<endl;
+
     return 0;
 }

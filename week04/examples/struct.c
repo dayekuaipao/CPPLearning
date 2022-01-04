@@ -16,10 +16,16 @@ struct Student{
 };
 int main()
 {
-    struct Student stu = {"Yu", 2000, true}; //initialization
-    // strcpy(stu.name, "Yu");
-    // stu.born = 2000;
-    // stu.male = true;
+    struct Student stu = {"Li", 2002, false}; //initialization
+
+    printf("Student %s, born in %d, gender %s\n", 
+        stu.name, 
+        stu.born, 
+        stu.male ? "male" : "female");
+
+    strcpy(stu.name, "Yu");
+    stu.born = 2000;
+    stu.male = true;
 
     printf("Student %s, born in %d, gender %s\n", 
         stu.name, 
