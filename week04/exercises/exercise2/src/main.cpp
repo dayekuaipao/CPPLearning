@@ -8,7 +8,7 @@ int main()
     dayinfo1.weather = DayInfo::SUNNY;
 
     dayinfo2.day = DayInfo::SUNDAY;
-    dayinfo2.weather = DayInfo::FROGGY;
+    dayinfo2.weather = DayInfo::FOGGY;
 
     dayinfo3.day = DayInfo::SUNDAY;
     dayinfo3.weather = DayInfo::CLOUDY;

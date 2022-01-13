@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<string.h>
 #include<stuinfo.hpp>
-using namespace std;
 void inputstu(stuinfo stu[],int n)
 {
     printf("Please input information of %d students:\n",n);
@@ -59,15 +58,20 @@ void sortstu(stuinfo stu[],int n)
     }
 }
 
-void findstu(stuinfo stu[],int n,char ch[])
+void findstu(stuinfo stu[],int n)
 {
+    char ch[20];
+    printf("Please input the name you want to find:");
+    fgets(ch,20,stdin);
+    if (ch[strlen(ch)-1] == '\n')
+        ch[strlen(ch)-1] = '\0';
     for(int i=0;i<n;i++)
     {
         if(strcmp(stu[i].name,ch)==0)
         {
-            printf("Student %d`s name: %s,scores: %lf, %lf, %lf,average: %lf\n",i,stu[i].name,stu[i].score[0],stu[i].score[1],stu[i].score[2],stu[i].ave);
+            printf("Student %s is in the list,scores: %lf, %lf, %lf,average: %lf\n",stu[i].name,stu[i].score[0],stu[i].score[1],stu[i].score[2],stu[i].ave);
             return;
         }
     }
-    printf("%s is not in the student list\n",ch);
+    printf("Student %s is not in the list\n",ch);
 }

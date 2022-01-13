@@ -5,6 +5,5 @@ int main()
     inputstu(stu,5);
     showstu(stu,5);
     sortstu(stu,5);
-    findstu(stu,5,"zhang yunxiang");
-    findstu(stu,5,"zhang song");
+    findstu(stu,5);
 }

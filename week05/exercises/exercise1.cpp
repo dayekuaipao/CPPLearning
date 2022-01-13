@@ -7,4 +7,5 @@ int main()
     {
         cout<<*(a+4-i)<<endl;
     }
+    delete[] a;
 }

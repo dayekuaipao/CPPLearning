@@ -6,7 +6,7 @@ struct DayInfo
     };
     enum Weather
     {
-        SUNNY,RAINY,CLOUDY,FROGGY
+        SUNNY,RAINY,CLOUDY,FOGGY
     };
     Day day;
     Weather weather;

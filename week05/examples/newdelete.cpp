@@ -35,6 +35,7 @@ int main()
     //allocate 16 int, the first 3 element are initialized to 1,2,3, the rest 0
     int * pa4 = new int[16]{1,2,3}; //C++11
 
+
     //allocate memory for 16 Student objects, default initializer
     Student * psa1 = new Student[16];
     //allocate memory for 16 Student objects, the first two are explicitly initialized

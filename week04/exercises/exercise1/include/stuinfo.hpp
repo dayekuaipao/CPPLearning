@@ -8,4 +8,4 @@ struct stuinfo
 void inputstu(stuinfo stu[],int n);
 void showstu(stuinfo stu[],int n);
 void sortstu(stuinfo stu[],int n);
-void findstu(stuinfo stu[],int n,char ch[]);
+void findstu(stuinfo stu[],int n);

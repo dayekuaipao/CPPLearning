@@ -11,7 +11,7 @@ int main()
     p[0] = 3; //okay
     *(p+1) = 4; //out of bound
 
-    cout << "num = " << num << endl;
+    cout << "num = " << p[0] << endl;
     
     return 0;
 }
