@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
-add_definitions(-DWITH_NEON)
+#add_definitions(-DWITH_NEON)
 #add_definitions(-DWITH_AVX2)
+
+add_definitions(-DCMAKE_BUILD_TYPE=Release)
 
 project(dotp)
 

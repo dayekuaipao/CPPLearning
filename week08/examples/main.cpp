@@ -43,6 +43,15 @@ int main(int argc, char ** argv)
     result = dotproduct_unloop(p1, p2, nSize);
     TIME_END("unloop")
 
+
+    TIME_START
+    result = dotproduct_omp(p1, p2, nSize);
+    TIME_END("normal+OMP")
+
+    TIME_START
+    result = dotproduct_unloop_omp(p1, p2, nSize);
+    TIME_END("unloop+OMP")
+
     TIME_START
     result = dotproduct_neon(p1, p2, nSize);
     TIME_END("SIMD")

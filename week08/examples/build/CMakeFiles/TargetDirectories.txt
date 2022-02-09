@@ -1,0 +1,3 @@
+/home/shaun/workspace/CPPLearning/week08/examples/build/CMakeFiles/rebuild_cache.dir
+/home/shaun/workspace/CPPLearning/week08/examples/build/CMakeFiles/edit_cache.dir
+/home/shaun/workspace/CPPLearning/week08/examples/build/CMakeFiles/dotp.dir

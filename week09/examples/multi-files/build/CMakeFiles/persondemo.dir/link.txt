@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/persondemo.dir/main.cpp.o CMakeFiles/persondemo.dir/student.cpp.o  -o persondemo 

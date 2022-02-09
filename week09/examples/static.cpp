@@ -62,7 +62,7 @@ void Student::printInfo()
     std::cout << "Gender: " << (male ? "Male" : "Female") << std::endl;
 }
 
-//size_t Student::student_total = 0; // definition it here
+size_t Student::student_total = 0; // definition it here
 
 int main()
 {

@@ -64,9 +64,17 @@ int main()
     };
 
     class1[1].printInfo();
-    delete class1;
-    //delete []class1;
+    //delete class1;
+    delete []class1;
 
+    Student class2[3]{
+        {"Tom", 2000, true},
+        {"Bob", 2001, true},
+        {"Amy", 2002, false},
+    };
+
+    class2[1].printInfo();
+    //delete class1;
 
     return 0;
 }
