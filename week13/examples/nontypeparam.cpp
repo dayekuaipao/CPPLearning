@@ -55,12 +55,17 @@ int main()
     cout << mat.getElement(1, 1) << endl;
 
     Mat<float, 3, 1> vec;
-    vec.setElement(2, 0, 3.14159f);
     cout << vec.getElement(2, 0) << endl;
 
     Mat<float, 3, 1> vec2(vec);
     cout << vec2.getElement(2, 0) << endl;
+    vec.setElement(2, 0, 3.14159f);
+    cout << vec.getElement(2, 0) << endl;
+    cout << vec2.getElement(2, 0) << endl;
 
+    vec2 = vec;
+    cout << vec.getElement(2, 0) << endl;
+    cout << vec2.getElement(2, 0) << endl;
     // vec2 = mat; //error
 
     return 0;
