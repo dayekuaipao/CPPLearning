@@ -1,6 +1,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
+#include <cstddef>
 struct MyMatrix
 {
     float* mat;
