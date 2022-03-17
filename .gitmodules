@@ -1,0 +1,3 @@
+[submodule "MyProjects/project5"]
+	path = MyProjects/project5
+	url = git@github.com:ShiqiYu/SimpleCNNbyCPP.git
