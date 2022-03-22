@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     for(int i=0;i<TEST_TIMES;i++)
     {
     	Mat c;
-    	c = multiply(&a,&b);
+    	c = matmul(&a,&b);
     	deleteMat(&c);
     }
     clock_t t2 = clock();
@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
     for(int i=0;i<TEST_TIMES;i++)
     {
         Mat c;
-        c = multiply_fast(&a,&b);
+        c = matmul_fast(&a,&b);
         deleteMat(&c);
     }
     clock_t t3 = clock();

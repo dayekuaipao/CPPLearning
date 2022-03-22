@@ -1,7 +1,7 @@
 #include "blob.h"
 
 template <typename T> 
-Blob<T>::Blob(size_t size)
+Blob<T>::Blob(size_t size):size(size)
 {
 	data = new T[size];
 	ref_count = new size_t(1);

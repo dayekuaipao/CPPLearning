@@ -2,7 +2,7 @@
 #include "mat.h"
 #include "matmul.h"
 
-Mat multiply(const Mat* a,const Mat* b)
+Mat matmul(const Mat* a,const Mat* b)
 {
     assert(a!=NULL&&b!=NULL);
     assert(a->data!=NULL&&b->data!=NULL);
@@ -194,7 +194,7 @@ void AddDot4x4(size_t k,const DATA_TYPE* a, size_t lda,const DATA_TYPE* b, size_
     *(c+ldc*3) += c_30_reg;   *(c+ldc*3+1) += c_31_reg;   *(c+ldc*3+2) += c_32_reg;   *(c+ldc*3+3) += c_33_reg;
 }
 
-Mat multiply_fast(const Mat* a,const Mat* b)
+Mat matmul_fast(const Mat* a,const Mat* b)
 {
     assert(a!=NULL&&b!=NULL);
     assert(a->data!=NULL&&b->data!=NULL);
