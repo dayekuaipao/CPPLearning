@@ -10,21 +10,17 @@ Blob<T>::Blob(size_t size):size(size)
 template <typename T>
 Blob<T>::~Blob()
 {
-	--(*ref_count);
-	if((*ref_count)==0)
+	if(data!=nullptr&&--(*ref_count)==0)
 	{
 		delete[] data;
 		data = nullptr;
 		delete ref_count;
-		ref_count = nullptr;
 	}
 }
 
 template <typename T>
-Blob<T>::Blob(const Blob<T>& other)
+Blob<T>::Blob(const Blob<T>& other):data(other.data),size(other.size),ref_count(other.ref_count)
 {
-	data = other.data;
-	ref_count = other.ref_count;
 	++(*ref_count);
 }
 
@@ -33,16 +29,14 @@ Blob<T> Blob<T>::operator=(const Blob<T>& other)
 {
 	if(this!=&other)
 	{
-		--(*ref_count);
-		if((*ref_count)==0)
+		if(data!=nullptr&&--(*ref_count)==0)
 		{
 			delete[] data;
 			data = nullptr;
 			delete ref_count;
-			ref_count = nullptr;
-
 		}
 		data = other.data;
+		size = other.size;
 		ref_count = other.ref_count;
 		++(*ref_count);
 	}
