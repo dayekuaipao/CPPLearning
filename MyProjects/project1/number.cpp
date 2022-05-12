@@ -7,6 +7,7 @@ using std::endl;
 Number::Number()
 {
     sign = true;
+    significand = 0;
     exponent = 0;
 }
 Number::~Number()
